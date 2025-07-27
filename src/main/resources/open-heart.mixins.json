@@ -1,0 +1,14 @@
+{
+	"required": false,
+	"package": "com.midnightdoggo19.openheart.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"OpenHeartMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
