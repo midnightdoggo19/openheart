@@ -1,35 +1,59 @@
 {
-	"schemaVersion": 1,
-	"id": "open-heart",
-	"version": "${version}",
-	"name": "Open Heart",
-	"description": "A mod to locate any block in your world!",
-	"authors": [
-		"Midnight Doggo"
-	],
-	"contact": {
-		"homepage": "https://midnightdoggo19.com/",
-		"sources": "https://github.com/midnightdoggo19/openheart"
-	},
-	"license": "GPL-3.0",
-	"icon": "assets/open-heart/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.midnightdoggo19.openheart.OpenHeart"
-		],
-		"client": [
-			"com.midnightdoggo19.openheart.OpenHeartClient"
-		]
-	},
-	"mixins": [
-		"open-heart.mixins.json"
-	],
-	"depends": {
-		"fabricloader": ">=0.16.14",
-		"minecraft": "1.21.2",
-		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"suggests": {}
+  "schemaVersion": 1,
+  "id": "open-heart",
+  "version": "${version}",
+  "name": "Open Heart",
+  "description": "A mod to locate any block in your world!",
+  "authors": [
+    "Midnight Doggo"
+  ],
+  "contact": {
+    "homepage": "https://midnightdoggo19.com/",
+    "sources": "https://github.com/midnightdoggo19/openheart"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/open-heart/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.midnightdoggo19.openheart.OpenHeart"
+    ],
+    "client": [
+      "com.midnightdoggo19.openheart.OpenHeartClient"
+    ]
+  },
+  "mixins": [
+    "open-heart.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "1.21.2",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/28Q77teVek",
+        "modmenu.modrinth": "https://modrinth.com/mod/vyB29E5x",
+        "modmenu.github_releases": "https://github.com/midnightdoggo19/openheart/releases"
+      },
+      "modmenu.website": "https://midnightdoggo19.com",
+      "modmenu.issues": "https://github.com/midnightdoggo19/openheart/issues",
+      "credits": {
+        "modmenu.credits.role.author": "Midnight Doggo",
+        "modmenu.authorPrefix": "Midnight Doggo"
+      },
+      "parent": {
+        "id": "open-heart",
+        "name": "Open Heart",
+        "description": "Locate any block",
+        "icon": "assets/open-heart/icon.png"
+      },
+      "update_checker": true
+    }
+  },
+  "suggests": {
+    "modmenu": "15.0.0-beta.3"
+  }
 }
